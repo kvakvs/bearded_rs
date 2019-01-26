@@ -1,7 +1,7 @@
-use crate::gamedef::material_def::MaterialDef;
-use crate::gamedef::units::Centigrade;
-use crate::gamedef::units::Volume;
-use crate::gamedef::units::Weight;
+use crate::gamedef::{
+  material_def::MaterialDef,
+  units::{Centigrade, Volume, Weight},
+};
 
 /// Component attached to everything which has physical properties and can have
 /// physical transformations applied to it.

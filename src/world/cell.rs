@@ -1,5 +1,4 @@
-use crate::gamedef::material_def::MaterialDef;
-use crate::gamedef::units::StructuralDurability;
+use crate::gamedef::{material_def::MaterialDef, units::StructuralDurability};
 
 pub enum MaterialState {
   /// For liquids defines level 1.0=full

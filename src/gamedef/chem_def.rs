@@ -5,5 +5,12 @@ pub struct ChemDef {
   /// Things can smell of known physical materials
   pub smell: Option<&'static MaterialDef>,
   /// 1.0 strong foul smell, 0.0 neutral
-  pub smell_foulness: f32,
+  pub stench: f32,
+}
+
+pub fn define_chemicals() -> Vec<ChemDef> {
+  vec![ChemDef {
+    smell: None,
+    stench: 0.0,
+  }]
 }

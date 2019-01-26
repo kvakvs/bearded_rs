@@ -1,5 +1,4 @@
-use crate::game::Game;
-use crate::gamedef::GameDef;
+use crate::{game::Game, gamedef::GameDef};
 
 mod component;
 mod game;

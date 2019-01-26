@@ -15,3 +15,29 @@ pub struct MaterialDef {
   pub t_conductivity: f32,
   pub phase: Phase,
 }
+
+pub fn define_materials() -> Vec<MaterialDef> {
+  vec![
+    MaterialDef {
+      name: "granite",
+      density: 5.0,
+      flammability: 0.0,
+      t_conductivity: 0.0,
+      phase: Phase::Solid,
+    },
+    MaterialDef {
+      name: "air",
+      density: 0.01,
+      flammability: 0.0,
+      t_conductivity: 0.01,
+      phase: Phase::Gas,
+    },
+    MaterialDef {
+      name: "water",
+      density: 1.0,
+      flammability: 0.0,
+      t_conductivity: 0.5,
+      phase: Phase::Liquid,
+    },
+  ]
+}

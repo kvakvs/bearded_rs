@@ -10,3 +10,13 @@ pub struct FoodDef {
   /// Increases joy when consumed (affects mood)
   pub joy: f32,
 }
+
+pub fn define_foods() -> Vec<FoodDef> {
+  vec![FoodDef {
+    name: "apple",
+    condition_degrade: 0.05,
+    nutritional_value: 0.05,
+    satiety: 0.25, // 4 apples and take a break
+    joy: 0.05,
+  }]
+}

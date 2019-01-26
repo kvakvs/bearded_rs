@@ -1,6 +1,7 @@
-use crate::component::inventory_item::InventoryItem;
-use crate::gamedef::units::Health;
-use crate::gamedef::units::Mana;
+use crate::{
+  component::inventory_item::InventoryItem,
+  gamedef::units::{Health, Mana},
+};
 
 pub enum Effect {
   HealthGain(Health),
